@@ -9,7 +9,7 @@ class App extends Component {
 
     componentDidMount() {
         $.get({
-            url: 'http://localhost:1337/backend/getAllPlans',
+            url: 'http://127.0.0.1:3721/backend/getAllPlans',
             dataType: "jsonp", 
             success: function (result) {
                 this.setState(result);
